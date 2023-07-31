@@ -1,10 +1,24 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
+import { header } from './header.js';
 import './database';
-import '../css/style.css'; 
+import '../css/style.css';
+
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
+
+// Create header container
+const headerContainer = document.createElement('div');
+headerContainer.classList.add('header');
+const headerText = document.createTextNode(header);
+headerContainer.appendChild(headerText);
+
+// Append the header before the editor
+main.appendChild(headerContainer);
+
+// const appContainer = document.querySelector('#app');
+// appContainer.insertBefore(headerContainer, appContainer.firstChild);
 
 const loadSpinner = () => {
   const spinner = document.createElement('div');
@@ -31,3 +45,5 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error('Service workers are not supported in this browser.');
 }
+
+
