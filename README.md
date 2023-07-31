@@ -4,19 +4,19 @@ UnpluggedInkwell is a browser-based text editor that functions as a progressive 
 
 ## Key Features:
 
-### Single-Page Application (SPA): 
+## Single-Page Application (SPA): 
 UnpluggedInkwell is built as a single-page application, ensuring a smooth and responsive user experience without the need for page reloads.
 
-### Offline Functionality: 
+## Offline Functionality: 
 The application leverages modern web technologies, allowing you to continue using the text editor even when you are offline.
 
-### Data Persistence Techniques: 
+## Data Persistence Techniques: 
 To ensure your data is always safe, UnpluggedInkwell implements multiple data persistence techniques. These techniques act as redundancy measures in case some options are not supported by certain browsers.
 
-### IndexedDB Integration: 
+## IndexedDB Integration: 
 The text editor utilizes the IndexedDB database for efficient data storage and retrieval. This enables you to save and access your content with ease.
 
-### Package 'idb' for IndexedDB: 
+## Package 'idb' for IndexedDB: 
 UnpluggedInkwell employs the 'idb' package, a lightweight wrapper around the IndexedDB API. Widely used by companies like Google and Mozilla, 'idb' provides convenient methods for interacting with the database.
 
 ## Deployment:
