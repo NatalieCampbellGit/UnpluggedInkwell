@@ -64,13 +64,13 @@ THEN I should have proper build scripts for a webpack application
 
 ## Prview
 J.A.T.E application launch: 
-![image1](./images/01-pic.PNG)
+![image1](images/01-pic.png)
 J.A.T.E application manifest.json file:
-![image1](./images/02-pic.PNG)
+![image2](images/02-pic.png)
 J.A.T.E application registered service worker:
-![image1](./images/03-pic.PNG)
+![image3](images/03-pic.png)
 J.A.T.E application IndexedDB storage:
-![image1](./images/04-pic.PNG)
+![image3](images/04-pic.png)
 
 ## Links
 The URL of the deployed application: https://nataliecampbellgit.github.io/UnpluggedInkwell
