@@ -1,0 +1,3 @@
+//! Implement asset caching
+
+//! Implement caching for install.js (if the file exists)
