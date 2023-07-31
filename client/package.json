@@ -1,18 +1,12 @@
 {
-  "name": "jate-appn",
-  "version": "1.0.0",
-  "description": "",
+  "name": "JATE",
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "npm run build && cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm start"
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "start": "webpack --watch"
   },
-  "keywords": [],
-  "author": "Natalie Campbell",
-  "license": "ISC",
+  "author": "2U",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
@@ -34,4 +28,3 @@
     "idb": "^6.1.2"
   }
 }
-
