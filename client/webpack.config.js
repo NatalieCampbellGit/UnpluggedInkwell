@@ -7,7 +7,7 @@ module.exports = () => {
   return {
     mode: 'production',
     // Entry point for files
-    entry: { //./src/js/index.js
+    entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
