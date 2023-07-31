@@ -8,12 +8,17 @@ import '../css/style.css';
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
-//header 
+// Create header container
 const headerContainer = document.createElement('div');
-headerContainer.innerHTML = header;
+headerContainer.classList.add('header');
+const headerText = document.createTextNode(header);
+headerContainer.appendChild(headerText);
 
-const appContainer = document.querySelector('#app');
-appContainer.insertBefore(headerContainer, appContainer.firstChild);
+// Append the header before the editor
+main.appendChild(headerContainer);
+
+// const appContainer = document.querySelector('#app');
+// appContainer.insertBefore(headerContainer, appContainer.firstChild);
 
 const loadSpinner = () => {
   const spinner = document.createElement('div');
