@@ -63,14 +63,17 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 
 ## Prview
-J.A.T.E application launch: 
-![image1](images/01-pic.png)
+J.A.T.E application launch:
+![launch](images/01-pic.png)
+
 J.A.T.E application manifest.json file:
-![image2](images/02-pic.png)
+![manifest.json](images/02-pic.png)
+
 J.A.T.E application registered service worker:
-![image3](images/03-pic.png)
+![regservwker](images/03-pic.png)
+
 J.A.T.E application IndexedDB storage:
-![image3](images/04-pic.png)
+![IndexDBstorage](images/04-pic.png)
 
 ## Links
 The URL of the deployed application: https://nataliecampbellgit.github.io/UnpluggedInkwell
