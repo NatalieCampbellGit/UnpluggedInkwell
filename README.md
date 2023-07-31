@@ -62,18 +62,18 @@ THEN I should have my static assets pre cached upon loading along with subsequen
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 
-## Prview
+## Preview
 J.A.T.E application launch:
-![launch](images/01-pic.png)
+![launch](./images/01-pic.png)
 
 J.A.T.E application manifest.json file:
-![manifest.json](images/02-pic.png)
+![manifest.json](./images/02-pic.png)
 
 J.A.T.E application registered service worker:
-![regservwker](images/03-pic.png)
+![regservwker](./images/03-pic.png)
 
 J.A.T.E application IndexedDB storage:
-![IndexDBstorage](images/04-pic.png)
+![IndexDBstorage](./images/04-pic.png)
 
 ## Links
 The URL of the deployed application: https://nataliecampbellgit.github.io/UnpluggedInkwell
