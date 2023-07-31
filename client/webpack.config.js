@@ -5,11 +5,11 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return {
-    mode: 'development',
+    mode: 'production',
     // Entry point for files
-    entry: {
-      main: './src/js/index.js',
-      install: './src/js/install.js'
+    entry: { //./src/js/index.js
+      main: './client/src/js/index.js',
+      install: './client/src/js/install.js'
     },
     // Output for bundles
     output: {
@@ -20,13 +20,13 @@ module.exports = () => {
     plugins: [ 
       //! Add and configure workbox plugins for a service worker and manifest file.
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './client/src/index.html',
         chunks: ['main'],
         filename: 'index.html',
         title: 'Just Another Text Editor',
       }),
       new HtmlWebpackPlugin({
-        template: './src/install.html',
+        template: './client/src/install.html',
         chunks: ['install'],
         filename: 'install.html',
         title: 'Install J.A.T.E',
@@ -34,8 +34,8 @@ module.exports = () => {
      
       // Injects the custom service worker
       new InjectManifest({
-        swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swSrc: './client/src-sw.js',
+        swDest: './client/src-sw.js',
       }),
 
       // Create a manifest.json file
@@ -51,7 +51,7 @@ module.exports = () => {
         publicPath: './',
         icons: [
           {
-            src: path.resolve('src/images/logo.png'),
+            src: path.resolve('./client/src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
@@ -82,5 +82,4 @@ module.exports = () => {
       ],
     },
   };
-};
-      
+};  
